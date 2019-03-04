@@ -1,3 +1,4 @@
+import { MaterialModule } from './core/material/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -22,6 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    // Modulo que permite cargar todos los modulos de Angular Material
+    MaterialModule,
     // Modulo que permite animations en Angular material
     BrowserAnimationsModule
   ],
