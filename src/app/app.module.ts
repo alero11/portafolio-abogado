@@ -8,6 +8,7 @@ import { LoginComponent } from './layouts/cms/login/login.component';
 import { PrincipalComponent } from './layouts/general/principal/principal.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { CasosJuridicosComponent } from './components/casos-juridicos/casos-juridicos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,11 @@ import { CasosJuridicosComponent } from './components/casos-juridicos/casos-juri
     CasosJuridicosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // Modulo que permite animations en Angular material
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
