@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './layouts/general/footer/footer.component';
 import { NavbarComponent } from './layouts/general/navbar/navbar.component';
 import { LoginComponent } from './layouts/cms/login/login.component';
-import { PrincipalComponent } from './layouts/general/principal/principal.component';
+import { PrincipalComponent } from './layouts/cms/principal/principal.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { CasosJuridicosComponent } from './components/casos-juridicos/casos-juridicos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Rutas
+import { APP_ROUTING } from './app.routes';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // Modulo que permite cargar todos los modulos de Angular Material
     MaterialModule,
     // Modulo que permite animations en Angular material
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
